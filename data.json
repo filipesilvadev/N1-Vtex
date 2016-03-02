@@ -1,0 +1,29 @@
+[
+{
+
+	"productName" : "Iori",
+	"productEspecification" : "incorporado",
+	"productPrice"  : "3700",
+	"productUrl"  : "/url",
+	"productImagerl"  : "img/product_Iori.jpg"
+
+},
+{
+
+	"productName" : "Street of Rage",
+	"productEspecification" : "com especial",
+	"productPrice"  : "2700",
+	"productUrl"  : "/url",
+	"productImagerl"  :"img/product_Rage.jpg"
+
+},
+{
+
+	"productName" : "Pacman",
+	"productEspecification" : "corra dos fantasmas",
+	"productPrice"  : "4700",
+	"productUrl"  : "/url",
+	"productImagerl"  : "img/product_Pacman.jpg"
+
+}
+]

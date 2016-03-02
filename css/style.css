@@ -1,0 +1,388 @@
+/*
+  CSS Reset
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+/*
+  Default
+*/
+body { background: #e9e9e9 }
+
+.wrapper{
+    max-width: 1024px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 0 22px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header h1,
+header form,
+header nav { display: inline-block; }
+
+.last { margin-right: 0 !important }
+
+/*
+  Header
+*/
+#logo a{
+	display: block;
+	width: 50px;
+	height: 31px;
+	background: url('../img/logo.png')no-repeat;
+	color: transparent;
+}
+
+header {
+	text-align: center;
+	background: #fff;
+}
+
+header h1 { float: left }
+
+header h1,
+header form { padding: 14.05px 0px }
+
+form [type="search"] {
+    width: 236px;
+    height: 31px;
+    display: inline-block;
+    background: #dedede;
+    margin-right: -4px;
+    border: 0;
+    padding: 0 10px;
+}
+
+form [type="submit"]{
+	font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    background: #40c3db;
+    padding: 3.55px 17px;
+    margin: 0;
+    border: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover { background: #1BAAC5 }
+
+form [type="submit"]:not(*:root) { padding: 5.5px 17px }
+
+header nav { float: right }
+
+.menu{
+	list-style:none; 
+	float:left; 
+	font-family: 'Roboto', sans-serif;
+	text-transform: lowercase;
+}
+
+.menu li{
+	position:relative; 
+	float:left; 
+}
+
+.menu li a{
+	color:#333;
+	text-decoration:none;
+	padding:21px 9px;
+	display:block;
+	letter-spacing: -1px;
+	font-size: 18px;
+}
+ 
+.menu li a:hover{
+	background:#40c3db; 
+	color:#fff; 
+}
+
+.menu li ul {
+	position: absolute;
+	top: 59px;
+	padding: 20px 0px;
+	display: none;
+	width: 289px;
+	background: #40C3DB none repeat scroll 0% 0%;
+	z-index: 10;
+}
+
+.menu li:hover ul { display:block }
+
+.menu li ul li{
+	display:block; 
+	width:100px;
+	margin: 0 10px 10px 5px;
+}
+
+.menu li ul li a{
+	color: #094154;
+	padding: 0;
+	font-size: 16px;
+}
+
+.menu li ul li a:hover{
+	color: #275b6d;
+
+}
+
+/*
+  SlideShow	
+*/
+section.slideShow { margin-bottom: 100px }
+
+#slide{
+	width: 100%;
+	height: 566px;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: -1px;
+}
+
+#slide .overview{
+	width: 306.5%;
+	height: 567px;
+	display: block;
+	position: relative;
+}
+
+#slide .viewPort{
+	width: 32.7%;
+	display: inline-block;
+	float: left;
+}
+
+#slide .viewPort a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+#slide .viewPort h6{
+	font-family: "Roboto",sans-serif;
+	color: #FFF;
+	font-size: 1em;
+	text-align: center;
+	padding: 130px 20px;
+	background: rgba(64, 195, 219, 0.75) none repeat scroll 0% 0%;
+	box-sizing: border-box;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	height: 100%;
+    visibility: hidden;
+}
+
+#slide .largeImg h6 { padding: 260px 20px }
+
+#slide .viewPort .largeImg{
+	width: 49.5%;
+	height: 566px;
+	float: left;
+	margin-left: 2px;
+}
+
+#slide a:hover h6 { visibility: visible }
+
+#slide .viewPort .largeImg +a{
+	margin-bottom: 8px;
+}
+
+#slide .viewPort .smallImg{
+	width: 49.5%;
+	height: 279px;
+	float: right;
+}
+
+/*Definindo posicionamentos do Controller*/
+#slideController{
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top:48%;
+}
+
+#slideController button{
+	width: 30px;
+	height: 50px;
+	border: 0;
+	display: inline-block;
+	background: url('../img/slideButtons.png')no-repeat;
+	cursor: pointer;
+}
+
+#slideController .prev{
+	position: absolute;
+	left: 5%;
+}
+
+#slideController .next{
+	position: absolute;
+	right: 5%;
+	background-position: 100% 0%;
+}
+
+/*Inserindo imagens nos slides*/
+#slide .slide_01 a { background: url('../img/slideImg_01.jpg')no-repeat scroll center / cover; }
+#slide .slide_01 a +a { background: url('../img/slideImg_02.jpg')no-repeat scroll center / cover; }
+#slide .slide_01 a +a +a{ background: url('../img/slideImg_03.jpg')no-repeat scroll center / cover; }
+
+#slide .slide_02 a { background: url('../img/slideImg_01.jpg')no-repeat scroll center / cover; }
+#slide .slide_02 a +a { background: url('../img/slideImg_02.jpg')no-repeat scroll center / cover; }
+#slide .slide_02 a +a +a { background: url('../img/slideImg_03.jpg')no-repeat scroll center / cover; }
+
+#slide .slide_03 a { background: url('../img/slideImg_01.jpg')no-repeat scroll center / cover; }
+#slide .slide_03 a +a { background: url('../img/slideImg_02.jpg')no-repeat scroll center / cover; }
+#slide .slide_03 a +a +a { background: url('../img/slideImg_03.jpg')no-repeat scroll center / cover; }
+
+/*
+  Produtos (Destaque e News)
+*/
+section.featured,
+section.news{
+	margin-bottom: 100px;
+}
+
+section.featured h2,
+section.news h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #4d4d4d;
+	text-align: center;
+	background: transparent url("../img/titleBorder.gif") no-repeat scroll center 100%;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.product{
+	font-family: 'Open Sans', sans-serif;
+	text-align: initial;
+	background: #fff;
+	display: inline-block;
+	margin: 0 36px 30px 0;
+	padding: 10px; 
+}
+
+.news .product { margin: 0 40px 30px 0 }
+
+.product:nth-child(3n+1){
+	margin-right: 0;
+}
+
+.description{
+	width: 190px;
+	padding: 12px 0px 10px;
+}
+
+.productName {
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.product em{
+    display: block;
+    font-size: 12px;
+    color: #bebdbd;
+    font-style: normal;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.price{
+	width: 60px;
+	float: right;
+	margin: -35px 0px 0px;
+}
+
+.price span{
+	font-size: 12px;
+    margin-top: 4px;
+    color: #000;
+    font-weight: 400;
+    float: left;
+}
+
+.productPrice {
+    text-align: right;
+    color: #7e9977;
+    font-weight: 600;
+}
+
+.product a{
+	background: #40c3db none repeat scroll 0% 0%;
+	height: 324px;
+	display: inline-block;
+}
+
+.product a:hover img{ opacity: 0.3 }
+
+/*
+	Ajustes na responsividade
+*/
+@media screen and (max-width: 1023px) {
+	.product  { margin: 0 31px 30px 0; }
+	.news .product { margin: 0 35px 30px 0; }
+	.product:nth-child(3n+1){margin-right: 0;}
+}
+
+@media screen and (max-width: 1013px) {
+	.product  { margin: 0 21px 30px 0; }
+	.news .product { margin: 0 25px 30px 0; }
+	.product:nth-child(3n+1){margin-right: 0;}
+}
+
+@media screen and (max-width: 995px) {
+	.product img {width: 200px;}
+	.product a {height: 232px;}
+}
+
+@media screen and (max-width: 753px) {
+	.product  { margin: 0 1px 30px 0; }
+	.news .product { margin: 0 5px 30px 0; }
+	.product:nth-child(3n+1){margin-right: 0;}
+}
+
+@media screen and (max-width: 714px) {
+	.product {display: block; width: 280px; margin: 0 auto 30px auto !important}
+	.product img {width: initial;}
+	.product a {height: 324px;}
+	header { height: 118px }
+	header nav { float: initial }
+	header h1 { margin-left: 20% }
+	header form { float: right; margin-right: 20% }
+}
+
+@media screen and (max-width: 600px) {
+	header { height: 179px }
+	header h1 { margin-left: initial; display: block; float: none}
+	#logo a { margin:0 auto; }
+	header form { float: none; margin-right: initial }
+	form [type="search"] { width: 180px; }
+}
+
+@media screen and (max-width: 345px) {
+	.wrapper { padding: 0 5px }
+	header h1 { float: initial }
+}
